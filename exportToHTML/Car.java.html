@@ -1,0 +1,568 @@
+<html>
+<head>
+<title>Car.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Car.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Car </span><span class="s2">{</span>
+    <span class="s3">//    汽车类</span>
+    <span class="s1">String carname</span><span class="s2">;</span>
+    <span class="s1">String brand</span><span class="s2">;</span>
+    <span class="s0">double </span><span class="s1">price</span><span class="s2">;</span>
+    <span class="s1">String type</span><span class="s2">;</span>
+
+    <span class="s0">public </span><span class="s1">Car</span><span class="s2">() {</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">Car</span><span class="s2">(</span><span class="s1">String carname</span><span class="s2">, </span><span class="s1">String brand</span><span class="s2">, </span><span class="s0">double </span><span class="s1">price</span><span class="s2">, </span><span class="s1">String type</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">carname </span><span class="s2">= </span><span class="s1">carname</span><span class="s2">;</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">brand </span><span class="s2">= </span><span class="s1">brand</span><span class="s2">;</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">price </span><span class="s2">= </span><span class="s1">price</span><span class="s2">;</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">type </span><span class="s2">= </span><span class="s1">type</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Car test </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Car</span><span class="s2">(</span><span class="s4">&quot;P7i&quot;</span><span class="s2">, </span><span class="s4">&quot;小鹏汽车&quot;</span><span class="s2">, </span><span class="s5">33.99</span><span class="s2">, </span><span class="s4">&quot;新能源&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">carname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">brand</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">price</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">type </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+
+        <span class="s1">Car test0 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Car</span><span class="s2">(</span><span class="s4">&quot;M9 Ultra&quot;</span><span class="s2">, </span><span class="s4">&quot;问界汽车&quot;</span><span class="s2">, </span><span class="s5">56.98</span><span class="s2">, </span><span class="s4">&quot;新能源&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">carname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">brand</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">price</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">type </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+
+        <span class="s1">Car test1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Car</span><span class="s2">(</span><span class="s4">&quot;CS75 PLUS&quot;</span><span class="s2">, </span><span class="s4">&quot;长安汽车&quot;</span><span class="s2">, </span><span class="s5">15.49</span><span class="s2">, </span><span class="s4">&quot;油车&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">carname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">brand</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">price</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">type </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+
+        <span class="s1">Car test2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Car</span><span class="s2">(</span><span class="s4">&quot;炮&quot;</span><span class="s2">, </span><span class="s4">&quot;长城汽车&quot;</span><span class="s2">, </span><span class="s5">29</span><span class="s2">, </span><span class="s4">&quot;油车&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">carname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">brand</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">price</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">type </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+
+        <span class="s1">Car test3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Car</span><span class="s2">(</span><span class="s4">&quot;秦PLUS&quot;</span><span class="s2">, </span><span class="s4">&quot;比亚迪汽车&quot;</span><span class="s2">, </span><span class="s5">17.98</span><span class="s2">, </span><span class="s4">&quot;混合动力&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">carname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">brand</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">price</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">type </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+
+
+        <span class="s1">Car test4 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Car</span><span class="s2">();</span>
+        <span class="s1">test4</span><span class="s2">.</span><span class="s1">setCarname</span><span class="s2">(</span><span class="s4">&quot;SU 7&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test4</span><span class="s2">.</span><span class="s1">getCarname</span><span class="s2">());</span>
+        <span class="s1">test4</span><span class="s2">.</span><span class="s1">setBrand</span><span class="s2">(</span><span class="s4">&quot;小米&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test4</span><span class="s2">.</span><span class="s1">getBrand</span><span class="s2">());</span>
+        <span class="s1">test4</span><span class="s2">.</span><span class="s1">setPrice</span><span class="s2">(</span><span class="s5">19.99</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test4</span><span class="s2">.</span><span class="s1">getPrice</span><span class="s2">());</span>
+        <span class="s1">test4</span><span class="s2">.</span><span class="s1">setType</span><span class="s2">(</span><span class="s4">&quot;新能源&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test4</span><span class="s2">.</span><span class="s1">getType</span><span class="s2">());</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCarname</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">carname</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCarname</span><span class="s2">(</span><span class="s1">String carname</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">carname </span><span class="s2">= </span><span class="s1">carname</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">String getBrand</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">brand</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setBrand</span><span class="s2">(</span><span class="s1">String brand</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">brand </span><span class="s2">= </span><span class="s1">brand</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public double </span><span class="s1">getPrice</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">price</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setPrice</span><span class="s2">(</span><span class="s0">double </span><span class="s1">price</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">price </span><span class="s2">= </span><span class="s1">price</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">String getType</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">type</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setType</span><span class="s2">(</span><span class="s1">String type</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">type </span><span class="s2">= </span><span class="s1">type</span><span class="s2">;</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+    <span class="s3">/*public static int gz(int a2, int a3, int a4, int a5, int a6) { 
+        int[] a = new int[]{a2, a3, a4, a5, a6}; 
+        int sum = a[0] + a[1] + a[2] + a[3] + a[4]; 
+        return sum / 5; 
+    } 
+ 
+    public static int sjs() { 
+        return (int) (Math.random() * 100 + 1); 
+    } 
+ 
+    public static int sum() { 
+        int sum = 0; 
+        for (int i = 1; i &lt;= 100; i++) { 
+            sum += i; 
+        } 
+        return sum; 
+    } 
+ 
+    public static int a(int a, int b) { 
+        return a + b; 
+    } 
+ 
+    public static int aa(int a, int b) { 
+        return a * b; 
+    } 
+ 
+    public static int aaa(int a, int b) { 
+        return (a + b) - (a + b) * (a + b) / (a + b); 
+    } 
+ 
+    public static void number() { 
+        int a = (int) (Math.random() * 2 + 1); 
+        switch (a) { 
+            case 1: 
+                for (int i = 1; i &lt;= 9; i++) { 
+                    for (int j = 1; j &lt;= i; j++) { 
+                        System.out.print(i + &quot;*&quot; + j + &quot;=&quot; + i * j + &quot;\t&quot;); 
+                    } 
+                    System.out.println(); 
+                } 
+                break; 
+            case 2: 
+                for (int i = 1; i &lt;= 9; i++) { 
+                    for (int j = 1; j &lt;= i; j++) { 
+                        System.out.print(i + &quot;+&quot; + j + &quot;=&quot; + (i + j) + &quot;\t&quot;); 
+                    } 
+                    System.out.println(); 
+                } 
+                break; 
+        } 
+    } 
+ 
+    public static void number0() { 
+        for (int i = 1; i &lt;= 9; i++) { 
+            for (int j = 1; j &lt;= i; j++) { 
+                System.out.print(i + &quot;*&quot; + j + &quot;=&quot; + i * j + &quot;\t&quot;); 
+            } 
+            System.out.println(); 
+        } 
+    } 
+ 
+    public static void number1() { 
+        for (int i = 1; i &lt;= 9; i++) { 
+            for (int j = 1; j &lt;= i; j++) { 
+                System.out.print(i + &quot;+&quot; + j + &quot;=&quot; + (i + j) + &quot;\t&quot;); 
+            } 
+            System.out.println(); 
+        } 
+    } 
+ 
+    public static void main(String[] args) { 
+        System.out.println(&quot;月平均工资：&quot; + gz(2000, 2500, 4300, 3200, 3800)); 
+        System.out.println(&quot;随机生成1~100的数：&quot; + sjs()); 
+        System.out.println(&quot;计算1~100的累加：&quot; + sum()); 
+        System.out.println(&quot;加法运算的结果：&quot; + a(10, 10)); 
+        System.out.println(&quot;乘法运算的结果：&quot; + aa(10, 10)); 
+        System.out.println(&quot;加减乘除运算的结果：&quot; + aaa(10, 10)); 
+        System.out.println(&quot;九九乘法表：&quot;); 
+        number0(); 
+        System.out.println(); 
+        System.out.println(&quot;九九加法表：&quot;); 
+        number1(); 
+        System.out.println(); 
+        System.out.println(&quot;随机九九乘法加法表：&quot;); 
+        number(); 
+    } 
+}*/</span>
+
+<span class="s3">/* 
+ * 作业名称：数组 
+ * 周次：16 
+ * 作业要求格式： 
+ * 1.截图代码及运行效果到word上，截图打自己的标识水印， 
+ * word命名格式  班级-周次-序号后2位-姓名-作业名称.doc 
+ * 例如：  232移动-16-08-张海鹏-数组.doc 
+ * 2.周四之前完成交学委 ，学委上交老师邮箱wnetx126@126.com 
+ * 作业内容： 
+ * 1.1.求平均工资：一个实习生在一家汽车维修店 2月工资3000,3月工资2500,4月工资4300,5月工资3200,6月工资3800 
+ * 要求：1.把工资数据存储到数组中 
+ * 2.求出月平均工资 
+ * 1.2.求平均成绩： 
+ * 要求：1.一个学生的课程成绩 语文118，数学108，英语115，物理95， 化学92，历史98，思政90，生物 96，通过控制台键盘输入成绩，并存储到数组中 
+ * 具体可以参考 学习通 \资料\2023\Test7 
+ * 2.求改学生平均成绩。 
+ * 1.3. 写个石头剪刀布的游戏   电脑随机生成 1,2,3个数字的某一个 ，用户在控制台中输入 1,2,3个数字的某一个  ,2个数字按照规则比较 
+ * 要求：1.1 代表石头，2代表剪刀，3代表布 
+ * 2. 统计10次猜拳后 玩家和电脑对战的胜率 
+ * 3. 当控制台 
+ * 规则： 以玩家的角度看胜负 
+ * 1.当玩家输入数字 playerNum  电脑随机生成数字为computerNum 
+ * 胜利条件：1-2==-1 || 2-3==-1  || 3-1==2     注释：石头对剪刀为1-2;  剪刀对布 2-3; 布对石头 3-1 
+ * 平局条件：playerNum==computerNum 
+ * 失败条件：1-3==2 || 2-1==1 || 3-2==1        注释： 石头对布为1-3；  剪刀对石头2-1；布对剪刀 3-2 
+ * 2.当玩家输入0，退出程序 
+ *//* 
+ 
+public class Du { 
+    int sum = 0; 
+    int[] a = new int[5]; 
+    int[] ac = new int[8]; 
+    Scanner achievement1 = new Scanner(System.in); 
+    Random r = new Random(); 
+    double time = 0; 
+ 
+    public static void main(String[] args) { 
+        Du pay = new Du(); 
+        pay.AVG(); 
+        Du chengji = new Du(); 
+        chengji.achievement3(); 
+        Du RPS = new Du(); 
+        RPS.RPS(); 
+    } 
+ 
+    public void AVG() { 
+        System.out.println(&quot;2月工资3000,3月工资2500,4月工资4300,5月工资3200,6月工资3800&quot;); 
+ 
+        for (int i = 0; i &lt; a.length; i++) { 
+            a[i] = achievement1.nextInt(); 
+            sum += a[i]; 
+            System.out.println(&quot;平均工资:&quot; + sum / (i + 1)); 
+        } 
+    } 
+ 
+    public void achievement3() { 
+        System.out.println(&quot;请输入:118,108,115,95,92,98,90,96&quot;); 
+        for (int i = 0; i &lt; ac.length; i++) { 
+            ac[i] = achievement1.nextInt(); 
+            sum += ac[i]; 
+            double AVG = (double) sum / (i + 1); 
+            System.out.println(&quot;学生平均成绩:&quot; + AVG); 
+        } 
+    } 
+ 
+    public void RPS() { 
+        System.out.println(&quot;\n石头剪刀布游戏\t数字1代表石头\t数字2代表剪刀\t数字3代表布&quot;); 
+        System.out.println(&quot;请输入1,2,3数字&quot;); 
+        out: 
+        for (int i = 0; i &lt; 10; i++) { 
+            int computerNum = r.nextInt(3) + 1; 
+            int playerNum = achievement1.nextInt(); 
+            if (computerNum == 2 &amp; playerNum == 1 || computerNum == 3 &amp; playerNum == 2 || computerNum == 1 &amp; playerNum == 3) { 
+                System.out.println(&quot;你赢了,继续！&quot;); 
+                time++; 
+            } else if (computerNum == 1 &amp; playerNum == 2 || computerNum == 2 &amp; playerNum == 3 || computerNum == 3 &amp; playerNum == 1) { 
+                System.out.println(&quot;你输了,再来一次！&quot;); 
+            } else { 
+                System.out.println(&quot;重来！&quot;); 
+            } 
+            if (playerNum == 0) { 
+                break out; 
+            } 
+        } 
+        System.out.println(&quot;你战胜电脑的胜利:&quot; + (time / 10) * 100 + &quot;%&quot;); 
+    } 
+*/</span>
+
+
+
+
+
+
+    <span class="s3">/*public static void main(String[] args) { 
+        int sum = 0; 
+        for (int i = 1; i &lt;= 100; i += 2) { 
+            sum += i; 
+        } 
+        System.out.println(&quot;1到100所有奇数的累加和是：&quot; + sum); 
+ 
+        System.out.println(); 
+        for (int i = 1; i &lt;= 9; i++) { 
+            for (int j = 1; j &lt;= i; j++) { 
+                System.out.print(j + &quot;*&quot; + i + &quot;=&quot; + i * j + &quot;\t&quot;); 
+            } 
+            System.out.println(); 
+        } 
+ 
+        System.out.println(); 
+        for (int i = 300; i &gt; 0; i--) { 
+            if (i % 19 == 0) { 
+                System.out.println(&quot;300以内能被19整除的最大正整数是：&quot; + i); 
+            } 
+        } 
+ 
+        System.out.println(); 
+        for (int i = 1; i &lt;= 10; i++) { 
+            if (i == 5) { 
+                continue; 
+            } 
+            System.out.print(i + &quot;\t&quot;); 
+        } 
+ 
+        System.out.println(); 
+        System.out.println(&quot;----学生信息管理系统----&quot;); 
+        System.out.println(&quot;info：----学生基本信息管理----&quot;); 
+        System.out.println(&quot;score：----学生成绩管理----&quot;); 
+        System.out.println(&quot;quit：----退出系统----&quot;); 
+        System.out.println(&quot;---------------------------------&quot;); 
+        out: 
+        while (true) { 
+            Scanner sc = new Scanner(System.in); 
+            System.out.print(&quot;main&gt;&quot;); 
+            String choice = sc.next(); 
+            switch (choice) { 
+                case &quot;info&quot;: 
+                    System.out.println(&quot;学生基本信息管理...&quot;); 
+                    break; 
+                case &quot;score&quot;: 
+                    System.out.println(&quot;学生成绩管理...&quot;); 
+                    break; 
+                case &quot;quit&quot;: 
+                    System.out.println(&quot;0&quot;); 
+                    break out; 
+                default: 
+                    System.out.println(&quot;输入错误！！！&quot;); 
+            } 
+        } 
+ 
+        System.out.println(); 
+        System.out.println(&quot;----学生基本信息管理----&quot;); 
+        System.out.println(&quot;load：----导入学生信息----&quot;); 
+        System.out.println(&quot;show：----显示学生信息----&quot;); 
+        System.out.println(&quot;add：----添加学生信息----&quot;); 
+        System.out.println(&quot;delete：----删除学生信息----&quot;); 
+        System.out.println(&quot;modify：----修改学生信息----&quot;); 
+        System.out.println(&quot;save：----导出学生信息----&quot;); 
+        System.out.println(&quot;return：----返回----&quot;); 
+        System.out.println(&quot;---------------------------------&quot;); 
+        out: 
+        while (true) { 
+            Scanner sc = new Scanner(System.in); 
+            System.out.print(&quot;info&gt;&quot;); 
+            String choice = sc.next(); 
+            switch (choice) { 
+                case &quot;load&quot;: 
+                    System.out.println(&quot;导入学生信息...&quot;); 
+                    break; 
+                case &quot;show&quot;: 
+                    System.out.println(&quot;显示学生信息...&quot;); 
+                    break; 
+                case &quot;add&quot;: 
+                    System.out.println(&quot;添加学生信息...&quot;); 
+                    break; 
+                case &quot;delete&quot;: 
+                    System.out.println(&quot;删除学生信息...&quot;); 
+                    break; 
+                case &quot;modify&quot;: 
+                    System.out.println(&quot;修改学生信息...&quot;); 
+                    break; 
+                case &quot;save&quot;: 
+                    System.out.println(&quot;导出学生信息...&quot;); 
+                    break; 
+                case &quot;return&quot;: 
+                    break out; 
+                default: 
+                    System.out.println(&quot;输入错误！！！&quot;); 
+            } 
+        } 
+ 
+        System.out.println(); 
+        System.out.println(&quot;----学生成绩管理----&quot;); 
+        System.out.println(&quot;avg：----课程平均分----&quot;); 
+        System.out.println(&quot;max：----课程最高分----&quot;); 
+        System.out.println(&quot;min：----课程最低分----&quot;); 
+        System.out.println(&quot;fails：----不及格人数----&quot;); 
+        System.out.println(&quot;return：----返回----&quot;); 
+        System.out.println(&quot;---------------------------------&quot;); 
+        while (true) { 
+            Scanner sc = new Scanner(System.in); 
+            System.out.print(&quot;score&gt;&quot;); 
+            String choice = sc.next(); 
+            switch (choice) { 
+                case &quot;avg&quot;: 
+                    System.out.println(&quot;课程平均分...&quot;); 
+                    break; 
+                case &quot;max&quot;: 
+                    System.out.println(&quot;课程最高分...&quot;); 
+                    break; 
+                case &quot;min&quot;: 
+                    System.out.println(&quot;课程最低分...&quot;); 
+                    break; 
+                case &quot;fails&quot;: 
+                    System.out.println(&quot;不及格人数...&quot;); 
+                    break; 
+                case &quot;return&quot;: 
+                    return; 
+                default: 
+                    System.out.println(&quot;输入错误！！！&quot;); 
+            } 
+        } 
+    }*/</span>
+
+    <span class="s3">/* 
+    //      23移动2班杜明川 
+    public static void main(String[] args) { 
+        Scanner x = new Scanner(System.in); 
+//        Random r = new Random(); 
+//      23移动2班杜明川 
+        System.out.print(&quot;请输入数字（1~12）：&quot;); 
+        int i = x.nextInt(); 
+        switch (i) { 
+            case 1: 
+                System.out.println(&quot;香菇滑鸡&quot;); 
+                break;//23移动2班杜明川 
+            case 2: 
+                System.out.println(&quot;烤鸭&quot;); 
+                break;//23移动2班杜明川 
+            case 3: 
+                System.out.println(&quot;鱼香肉丝&quot;); 
+                break;//23移动2班杜明川 
+            case 4: 
+                System.out.println(&quot;宫保鸡丁&quot;); 
+                break;//23移动2班杜明川 
+            case 5: 
+                System.out.println(&quot;麻婆豆腐&quot;); 
+                break;//23移动2班杜明川 
+            case 6: 
+                System.out.println(&quot;炒面&quot;); 
+                break;//23移动2班杜明川 
+            case 7: 
+                System.out.println(&quot;烤串&quot;); 
+                break;//23移动2班杜明川 
+            case 8: 
+                System.out.println(&quot;拔丝苹果&quot;); 
+                break;//23移动2班杜明川 
+            case 9: 
+                System.out.println(&quot;糖醋排骨&quot;); 
+                break;//23移动2班杜明川 
+            case 10: 
+                System.out.println(&quot;红烧肉&quot;); 
+                break;//23移动2班杜明川 
+            case 11: 
+                System.out.println(&quot;饺子&quot;); 
+                break;//23移动2班杜明川 
+            case 12: 
+                System.out.println(&quot;麻辣烫&quot;); 
+                break;//23移动2班杜明川 
+        } 
+        System.out.println(); 
+//        23移动二班杜明川 
+ 
+//        作业二 For循环 
+ 
+        int p = 0; 
+        for (int o = 0; o &lt; 101; o++) { 
+            p += o; 
+            System.out.print(&quot;第&quot; + o + &quot;次累加：&quot;); 
+            System.out.println(p); 
+        } 
+        System.out.println(); 
+ 
+        int p1 = 0; 
+        int p2 = 0; 
+        for (int o = 2; o &lt; 101; o += 2) { 
+            p1 += o; 
+            p2++; 
+            System.out.print(&quot;第&quot; + p2 + &quot;次偶数累加：&quot;); 
+            System.out.println(p1); 
+        } 
+ 
+ 
+ 
+ 
+        /*for (int b = 1; b &lt; 100; b++) { 
+            int a = r.nextInt(101); 
+            System.out.println(&quot;第&quot; + b +&quot;个数字:&quot;+ a); 
+        }*/</span>
+
+
+
+        <span class="s3">/*System.out.print(&quot;请输入1~7的整数：&quot;); 
+        int a = x.nextInt(); 
+ 
+        switch (a) { 
+            case 1: 
+                System.out.println(&quot;星期一&quot;); 
+                break; 
+            case 2: 
+                System.out.println(&quot;星期二&quot;); 
+                break; 
+            case 3: 
+                System.out.println(&quot;星期三&quot;); 
+                break; 
+            case 4: 
+                System.out.println(&quot;星期四&quot;); 
+                break; 
+            case 5: 
+                System.out.println(&quot;星期五&quot;); 
+                break; 
+            case 6: 
+                System.out.println(&quot;星期六&quot;); 
+                break; 
+            case 7: 
+                System.out.println(&quot;星期日&quot;); 
+                break; 
+        } 
+        System.out.println();*/</span>
+
+
+        <span class="s3">/*System.out.println(&quot;一个月有多少天&quot;); 
+        System.out.println(&quot;请输入月份&quot;); 
+        int b = x.nextInt(); 
+        switch (b) { 
+            case 1,3,5,7,8,10,12: 
+                System.out.println(&quot;31&quot;); 
+                break; 
+            case 2: 
+                System.out.println(&quot;28&quot;); 
+                break; 
+            case 4,6,9,11: 
+                System.out.println(&quot;30&quot;); 
+                break; 
+ 
+ 
+        }*/</span>
+
+
+
+
+
+        <span class="s3">/*System.out.print(&quot;请输入0~100的整数:&quot;); 
+        int b = x.nextInt(); 
+ 
+        if (b &gt;= 90) { 
+            System.out.println(&quot;A&quot;); 
+        } else if (b &gt;= 80) { 
+            System.out.println(&quot;B&quot;); 
+        } else if (b &gt;= 70) { 
+            System.out.println(&quot;C&quot;); 
+        } else if (b &gt;= 60) { 
+            System.out.println(&quot;D&quot;); 
+        } else 
+            System.out.println(&quot;E&quot;);*/</span>
+
+</pre>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Cat.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Cat.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Cat </span><span class="s2">{</span>
+    <span class="s3">//    猫类</span>
+    <span class="s1">String catname</span><span class="s2">;</span>
+    <span class="s1">String color</span><span class="s2">;</span>
+    <span class="s0">double </span><span class="s1">catprice</span><span class="s2">;</span>
+
+    <span class="s0">public </span><span class="s1">Cat</span><span class="s2">() {</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">Cat</span><span class="s2">(</span><span class="s1">String catname</span><span class="s2">, </span><span class="s1">String color</span><span class="s2">, </span><span class="s0">double </span><span class="s1">catprice</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">catname </span><span class="s2">= </span><span class="s1">catname</span><span class="s2">;</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">color </span><span class="s2">= </span><span class="s1">color</span><span class="s2">;</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">catprice </span><span class="s2">= </span><span class="s1">catprice</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Cat test </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Cat</span><span class="s2">(</span><span class="s4">&quot;波斯猫&quot;</span><span class="s2">, </span><span class="s4">&quot;黑白色&quot;</span><span class="s2">, </span><span class="s5">1000</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">catname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">color</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test</span><span class="s2">.</span><span class="s1">catprice </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+        <span class="s1">test</span><span class="s2">.</span><span class="s1">eat</span><span class="s2">();</span>
+        <span class="s1">test</span><span class="s2">.</span><span class="s1">sleep</span><span class="s2">();</span>
+        <span class="s1">Cat test0 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Cat</span><span class="s2">(</span><span class="s4">&quot;皮卡丘&quot;</span><span class="s2">, </span><span class="s4">&quot;黄色&quot;</span><span class="s2">, </span><span class="s5">2000</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">catname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">color</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test0</span><span class="s2">.</span><span class="s1">catprice </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+        <span class="s1">Cat test1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Cat</span><span class="s2">(</span><span class="s4">&quot;小叮当&quot;</span><span class="s2">, </span><span class="s4">&quot;橘色&quot;</span><span class="s2">, </span><span class="s5">3000</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">catname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">color</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test1</span><span class="s2">.</span><span class="s1">catprice </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+        <span class="s1">Cat test2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Cat</span><span class="s2">(</span><span class="s4">&quot;小花猫&quot;</span><span class="s2">, </span><span class="s4">&quot;花色&quot;</span><span class="s2">, </span><span class="s5">4000</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">catname</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">color</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test2</span><span class="s2">.</span><span class="s1">catprice </span><span class="s2">+ </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+
+        <span class="s1">Cat test3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Cat</span><span class="s2">();</span>
+        <span class="s1">test3</span><span class="s2">.</span><span class="s1">setCatname</span><span class="s2">(</span><span class="s4">&quot;小橘&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">getCatname</span><span class="s2">());</span>
+        <span class="s1">test3</span><span class="s2">.</span><span class="s1">setColor</span><span class="s2">(</span><span class="s4">&quot;橘色&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">getColor</span><span class="s2">());</span>
+        <span class="s1">test3</span><span class="s2">.</span><span class="s1">setCatprice</span><span class="s2">(</span><span class="s5">500</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">test3</span><span class="s2">.</span><span class="s1">getCatprice</span><span class="s2">());</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">eat</span><span class="s2">() {</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;吃猫粮&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">sleep</span><span class="s2">() {</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;睡懒觉&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCatname</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">catname</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCatname</span><span class="s2">(</span><span class="s1">String catname</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">catname </span><span class="s2">= </span><span class="s1">catname</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">String getColor</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">color</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setColor</span><span class="s2">(</span><span class="s1">String color</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">color </span><span class="s2">= </span><span class="s1">color</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public double </span><span class="s1">getCatprice</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">catprice</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCatprice</span><span class="s2">(</span><span class="s0">double </span><span class="s1">catprice</span><span class="s2">) {</span>
+        <span class="s0">this</span><span class="s2">.</span><span class="s1">catprice </span><span class="s2">= </span><span class="s1">catprice</span><span class="s2">;</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
