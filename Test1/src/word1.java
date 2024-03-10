@@ -43,7 +43,7 @@ public class word1 {
         this.page = page;
     }
 
-    public String road() {
-        return "看" + getName();
+    public void road() {
+        System.out.println("看" + getName() + "\n");
     }
 }
